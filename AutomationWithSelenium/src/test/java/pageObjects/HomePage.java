@@ -15,7 +15,6 @@ public class HomePage extends BasePage {
 	@FindBy(xpath ="//h2[contains(.,'Category')]")WebElement  categoryName;
 	@FindBy(xpath ="//h2[contains(.,'Features Items')]")WebElement  featureNames;
 	@FindBy(xpath ="//h2[contains(.,'Brands')]")WebElement  brandsNames;
-	
 	@FindBy(xpath ="//a[@href='/login']")WebElement  SignUpLoginOption;
 	@FindBy(xpath ="//a[@href='/products']")WebElement  productsOption;
 	

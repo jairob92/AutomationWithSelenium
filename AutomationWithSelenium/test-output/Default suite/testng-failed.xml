@@ -6,8 +6,8 @@
       <class name="testCases.TC001_RegisterUser">
         <methods>
           <include name="setUp"/>
-          <include name="CheckAccesPage"/>
           <include name="tearDown"/>
+          <include name="CheckAccesPage"/>
           <include name="initializePages"/>
           <include name="RegisterNewUser"/>
         </methods>

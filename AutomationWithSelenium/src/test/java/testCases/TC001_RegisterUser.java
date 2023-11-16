@@ -55,7 +55,45 @@ public class TC001_RegisterUser extends BaseClass {
 			String title=registerUserpage.getTitleForm();
 			System.out.println(title);
 			Assert.assertEquals(title,"ENTER ACCOUNT INFORMATION");
-			logger.info("Page ready to register new User");
+			logger.info("Page ready to register new User...");
+			
+			registerUserpage.clickMaleGender();
+			logger.info("Cleaning name...");
+			registerUserpage.clearName();
+			logger.info("setting name...");
+			registerUserpage.setName("Jairo");
+			logger.info("setting password...");
+			registerUserpage.setPassword("123456");
+			logger.info("selecting day...");
+			registerUserpage.selectDay("2");
+			logger.info("selecting month...");
+			registerUserpage.selectMonth("2");
+			logger.info("selecting year...");
+			registerUserpage.selectYear("1992");
+			logger.info("setting firstName...");
+			registerUserpage.setFirstName("Jairo");
+			logger.info("setting lastName...");
+			registerUserpage.setLastName("Bermudez");
+			logger.info("setting company...");
+			registerUserpage.setCompany("Coca-Cola");
+			logger.info("setting address 1...");
+			registerUserpage.setAddress1("Calle 1");
+			logger.info("setting address 2...");
+			Thread.sleep(5000);
+			registerUserpage.setAddress2("calle 20");
+			logger.info("setting country...");
+			registerUserpage.selectCountry("Canada");
+			logger.info("setting state ...");
+			registerUserpage.setState("Ontario");
+			logger.info("setting state ...");
+			registerUserpage.setCity("Toronto");
+			logger.info("setting zipCode ...");
+			registerUserpage.setZipCode("68001");
+			logger.info("setting mobile Number ...");
+			registerUserpage.setMobileNumber("321232123");
+			//registerUserpage.clickOnBtnCA();
+			
+			
 			
 		}catch (Exception e) {
 			logger.error("Test Failed");
