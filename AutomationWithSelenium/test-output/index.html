@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Automation_Exercise" class="navigator-link ">
-                    <span>master.xml</span>
+                    <span>C:\Users\Jairo\git\AutomationWithSelenium\AutomationWithSelenium\master.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Exercise" title="testCases.TC001_RegisterUser" class="method navigator-link" hash-for-method="RegisterNewUser">RegisterNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Exercise" title="testCases.TC001_RegisterUser" class="method navigator-link" hash-for-method="checkSignOption">checkSignOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Automation_Exercise -->
@@ -143,12 +148,19 @@
                   <span class="method-name">RegisterNewUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSignOption">
+                  </a> <!-- checkSignOption -->
+                  <span class="method-name">checkSignOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automation_Exercise-class-passed -->
         </div> <!-- panel Automation_Exercise -->
         <div panel-name="test-xml-Automation_Exercise" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/jbermudez/git/AutomationWithSelenium/AutomationWithSelenium/master.xml</span>
+            <span class="header-content">C:\Users\Jairo\git\AutomationWithSelenium\AutomationWithSelenium\master.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,20 +213,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'RegisterNewUser')
 data.setCell(0, 2, 'testCases.TC001_RegisterUser')
-data.setCell(0, 3, 13604);
+data.setCell(0, 3, 12083);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CheckAccesPage')
+data.setCell(1, 1, 'checkSignOption')
 data.setCell(1, 2, 'testCases.TC001_RegisterUser')
-data.setCell(1, 3, 57);
+data.setCell(1, 3, 2837);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CheckAccesPage')
+data.setCell(2, 2, 'testCases.TC001_RegisterUser')
+data.setCell(2, 3, 40);
 window.suiteTableData['Automation_Exercise']= { tableData: data, tableDiv: 'times-div-Automation_Exercise'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Automation_Exercise">
               </div> <!-- times-div-Automation_Exercise -->
             </div> <!-- times-div -->
@@ -247,23 +263,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">5548 ms</span>
+                <span class="method-start">3230 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckAccesPage</span>
-                <span class="method-start">5564 ms</span>
+                <span class="method-start">3242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">5627 ms</span>
+                <span class="method-start">3291 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkSignOption</span>
+                <span class="method-start">3296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">6134 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegisterNewUser</span>
-                <span class="method-start">5628 ms</span>
+                <span class="method-start">6135 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19234 ms</span>
+                <span class="method-start">18219 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

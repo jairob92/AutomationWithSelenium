@@ -30,8 +30,11 @@ public class RegisterUserPage extends BasePage {
 	@FindBy(id="city")WebElement inputCity;
 	@FindBy(id="zipcode")WebElement inputZipCode;
 	@FindBy(id="mobile_number")WebElement inputMobileNumber;
-	@FindBy(id="(//button[@type='submit'])[1]")WebElement btnCreateAccount;
-	
+	@FindBy(xpath="(//button[@type='submit'])[1]")WebElement btnCreateAccount;
+	@FindBy(xpath="//b[contains(.,'Account Created!')]")WebElement accountCreatedmsg;
+	@FindBy(xpath ="//p[contains(.,'Congratulations! Your new account has been successfully created!')]") WebElement contratulationsMsg;
+	@FindBy(xpath = "//a[contains(@data-qa,'continue-button')]") WebElement btnContinue;
+	//b[contains(.,'Account Created!')]
 	
 	/*public boolean checkTitleForm() {
 		
@@ -111,6 +114,17 @@ public class RegisterUserPage extends BasePage {
 	
 	public void clickOnBtnCA() {
 		btnCreateAccount.click();
+	}
+	public String accountCreatedmsg() {
+		try {
+			String msg=accountCreatedmsg.getText();
+			return msg;	
+		}catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+	public void clickonBtnContinue() {
+		btnContinue.click();
 	}
 	
 	
